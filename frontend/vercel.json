@@ -5,9 +5,6 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/_expo/(.*)", "dest": "dist/_expo/$1" },
-    { "src": "/assets/(.*)", "dest": "dist/assets/$1" },
-    { "src": "/pages/(.*)", "dest": "dist/pages/$1/index.html" },
     { "src": "/(.*)", "dest": "./dist/index.html" }
   ]
 }
