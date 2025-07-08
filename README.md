@@ -26,13 +26,11 @@ Este projeto simula uma ativação interativa em um estande de evento, onde o pa
 - Painel administrativo simples:
   - Quantidade de participações por dia
   - Links das fotos geradas
-
-## Como rodar o projeto localmente
-    
+ 
 
 ## Deploy
 - O frontend está hospedado em:  https://projeto-nex-lab.vercel.app/
-- O frontend está hospedado em: https://nex-lab-desafio.vercel.app/
+- O backend está hospedado em: https://nex-lab-desafio.vercel.app/
 
 ## Painel Administrativo
 - Acesse `/pages/adm` para visualizar o painel com participações e links das fotos.
