@@ -51,8 +51,10 @@ Acesse o diretório backend e instale as dependências:
     ⚠️ Atenção:
     cria o arquivo .env dentro da pasta backend nele vc coloca as variaveis  
       allowedOrigins=http://localhost:8081 ou a porta iniciada pelo front
+   
       cod_apk=chave_de_sua_preferencia. esse codigo tem que ser o mesmo que está no app.json representado pela APP_SECRET_KEY
     execute no terminal  para iniciar a aplicação
+   
       - node index.js
 
   ⚠️ Atenção: o backend exige acesso ao Cloudinary para funcionar corretamente.
