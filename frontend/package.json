@@ -9,12 +9,11 @@
     "ios": "expo start --ios",
     "web": "PORT=8081  expo start --web ",
     "lint": "expo lint",
-    
     "vercel-build": "npx expo export --platform web --output-dir dist"
   },
   "dependencies": {
     "@expo/vector-icons": "^14.1.0",
-    "@expo/webpack-config": "^19.0.1",
+    "@expo/webpack-config": "18.0.0",
     "@react-navigation/bottom-tabs": "^7.4.2",
     "@react-navigation/elements": "^2.3.8",
     "@react-navigation/native": "^7.1.14",
@@ -73,5 +72,4 @@
     "typescript": "~5.8.3"
   },
   "private": true
-  
 }
