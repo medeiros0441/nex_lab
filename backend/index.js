@@ -41,10 +41,10 @@ app.use(cors({
 
 app.use(express.json({ limit: '50mb' }));
 
-// 🔒 Middleware global para validar x-api-key
+// 🔒 Middleware global para validar  x-api-key
 app.use((req, res, next) => {
   const clientKey = req.headers['x-api-key'];
-  const expectedKey = "b5bW9jdAdC3zkGmn7UqV8kRMq7phgGKyO5Vds9XWeoM";
+  const expectedKey = process.env.cod_apk;
   if (!clientKey || clientKey !== expectedKey) {
     return res.status(401).json({ error: 'Unauthorized: Invalid API key' });
   }
