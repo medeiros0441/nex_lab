@@ -16,7 +16,12 @@
         "foregroundImage": "./assets/images/logo.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "camera.nex.lab"
     },
     "web": {
       "bundler": "metro",
@@ -49,8 +54,11 @@
     "extra": {
       "BACKEND_BASE_URL": "https://nex-lab-desafio.vercel.app/api/",
       "FRONT_BASE_URL": "https://projeto-nex-lab.vercel.app/",
-      "APP_SECRET_KEY": "b5bW9jdAdC3zkGmn7UqV8kRMq7phgGKyO5Vds9XWeoM"
-
+      "APP_SECRET_KEY": "b5bW9jdAdC3zkGmn7UqV8kRMq7phgGKyO5Vds9XWeoM",
+      "router": {},
+      "eas": {
+        "projectId": "5396d138-ca6a-49d6-a1b5-08e430319231"
+      }
     }
   }
 }
