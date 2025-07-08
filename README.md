@@ -39,7 +39,26 @@ Este projeto simula uma ativação interativa em um estande de evento, onde o pa
 ## Observações
 - O código está organizado em `frontend/`  e `backend/`.
 - A experiência foi pensada para ser fluida, responsiva e próxima do real.
-- Criatividade, clareza e organização foram priorizadas conforme solicitado no desafio.
+- Criatividade, clareza e organização foram priorizadas conforme solicitado no desafio. 
+
+
+## Executando localmente
+
+### Backend
+
+1. Acesse o diretório `backend`:
+   
+    cd backend
+    npm install --legacy-peer-deps
+    node index.js
+  
+2. Acesse o diretório frontend:
+
+  cd frontend
+  npm install --legacy-peer-deps
+  npx expo start --clear
+
+
 
 
 Desenvolvido por Samuel Medeiros.
