@@ -1,6 +1,6 @@
 # Ignorar node_modules (de qualquer lugar)
 node_modules/
-
+frontend/node_modules/
 # Diretórios de build
 android/build/
 ios/build/

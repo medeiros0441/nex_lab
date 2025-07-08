@@ -5,3 +5,44 @@
 expo-env.d.ts
 # @end expo-cli
 .vercel
+# Ignorar node_modules (de qualquer lugar)
+node_modules/
+frontend/node_modules/
+# Diretórios de build
+android/build/
+ios/build/
+ios/Pods/
+dist/
+web-build/
+
+# Expo / React Native
+.expo/
+.expo-shared/
+
+# VSCode
+.vscode/
+
+# MacOS
+.DS_Store
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Cache do Metro bundler
+metro-cache/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# (Opcional) lock files (caso você queira ignorar — geralmente não recomendado)
+# package-lock.json
+# yarn.lock
