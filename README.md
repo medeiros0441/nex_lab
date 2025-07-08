@@ -41,23 +41,38 @@ Este projeto simula uma ativação interativa em um estande de evento, onde o pa
 - A experiência foi pensada para ser fluida, responsiva e próxima do real.
 - Criatividade, clareza e organização foram priorizadas conforme solicitado no desafio. 
 
+🚀 Executando Localmente
+1. Backend
+Acesse o diretório backend e instale as dependências:
 
-## Executando localmente
-
-### Backend
-
-1. Acesse o diretório `backend`:
-   
     cd backend
     npm install --legacy-peer-deps
-    node index.js
-  
+
+    ⚠️ Atenção:
+    cria o arquivo .env dentro da pasta backend nele vc coloca as variaveis  
+      allowedOrigins=http://localhost:8081 ou a porta iniciada pelo front
+      cod_apk=chave_de_sua_preferencia. esse codigo tem que ser o mesmo que está no app.json representado pela APP_SECRET_KEY
+    execute no terminal  para iniciar a aplicação
+      - node index.js
+
+  ⚠️ Atenção: o backend exige acesso ao Cloudinary para funcionar corretamente.
+    Por motivos de segurança, as credenciais não estão incluídas no projeto.
+    Se desejar rodar o backend localmente, será necessário:
+    Criar um arquivo .env com suas credenciais do Cloudinary:
+
+      CLOUD_NAME=seu_cloud_name
+      API_KEY=sua_api_key
+      API_SECRET=sua_api_secret
+
+    Ou adaptar o projeto para realizar uploads de arquivos localmente.
+
 2. Acesse o diretório frontend:
 
   cd frontend
   npm install --legacy-peer-deps
   npx expo start --clear
 
+ 
 
 
 

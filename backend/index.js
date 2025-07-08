@@ -1,17 +1,22 @@
-require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const { saveImage, downloadImage, adminPanel, healthCheck } = require('./controller');
 const fs = require('fs');
 const path = require('path');
 
+const dotenv = require('dotenv'); // só importa o módulo
+
+if (process.env.NODE_ENV !== 'production') {
+  const result = dotenv.config({ path: './.env' });
+  if (result.error) {
+    console.error('Erro ao carregar .env:', result.error);
+  } else {
+    console.log('Variáveis carregadas!');
+  }
+}  
 const app = express();
 
-const allowedOrigins =  [
-      'https://projeto-nex-lab.vercel.app',
-      'http://localhost:8081',
-    ];
-
+const allowedOrigins =   process.env.allowedOrigins
 
 // Middleware de log de requisições
 app.use((req, res, next) => {
