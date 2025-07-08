@@ -1,21 +1,16 @@
-# Node modules
-/node_modules/
-
-# Expo / React Native
-.expo/
-.expo-shared/
-web-build/
-dist/
-
-# Logs
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# Ignorar node_modules (de qualquer lugar)
+node_modules/
 
 # Diretórios de build
 android/build/
 ios/build/
 ios/Pods/
+dist/
+web-build/
+
+# Expo / React Native
+.expo/
+.expo-shared/
 
 # VSCode
 .vscode/
@@ -28,7 +23,7 @@ ios/Pods/
 *.temp
 *.swp
 
-# Ambiente
+# Arquivos de ambiente
 .env
 .env.local
 .env.*.local
@@ -36,6 +31,11 @@ ios/Pods/
 # Cache do Metro bundler
 metro-cache/
 
-# Arquivos de lock (geralmente você quer versionar, mas se quiser ignorar)
-// package-lock.json
-// yarn.lock
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# (Opcional) lock files (caso você queira ignorar — geralmente não recomendado)
+# package-lock.json
+# yarn.lock
